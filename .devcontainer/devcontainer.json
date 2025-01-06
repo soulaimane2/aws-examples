@@ -1,0 +1,8 @@
+{
+  "name": "Custom Node Workspace",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:latest",
+  "postCreateCommand": "cd /workspace && curl \"https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip\" -o \"awscliv2.zip\" && unzip awscliv2.zip && sudo ./aws/install && cd $WORKSPACE_FOLDER",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  }
+}
